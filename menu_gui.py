@@ -1,9 +1,22 @@
 #GUI Setup
+
+import os
+import sys
+
+import sys
+
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+    return os.path.join(base_path, relative_path)
+
+
 class Menu_Gui():
     import customtkinter
     def __init__(self):
-        self.customtkinter.set_appearance_mode("")  # Modes: system (default), light, dark
-        self.customtkinter.set_default_color_theme("C:/Users/Marko/PycharmProjects/snake/default_theme.json")  # Themes: blue (default), dark-blue, green
+        self.current_directory = os.path.dirname(os.path.abspath(__file__))
+        theme_path = resource_path("default_theme.json")
+        self.customtkinter.set_default_color_theme(theme_path) # Themes: blue (default), dark-blue, green
         self.app = self.customtkinter.CTk()  # create CTk window like you do with the Tk window
         self.app.geometry("1920x1080")
         self.app.title("snake")
