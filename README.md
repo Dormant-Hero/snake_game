@@ -16,9 +16,9 @@ Currently included:
 
 -Game should automatically detect monitor resolution
 
-TODO List:
+-Sound for when food is digested
 
--Sounds for when food is eaten
+TODO List:
 
 -Ways to die including more interesting than the default game hopefully
 
