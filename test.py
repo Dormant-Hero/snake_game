@@ -1,10 +1,5 @@
-#The snake game itself
-from turtle import Turtle
+import os
 
+current_directory = os.path.dirname(os.path.abspath(__file__))
 
-
-snake = Turtle()
-snake.screen.screensize(500, 500)
-snake.screen.bgcolor("black")
-snake.dot("red")
-snake.screen.mainloop()
+print(current_directory)
