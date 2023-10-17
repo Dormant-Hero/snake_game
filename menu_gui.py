@@ -37,6 +37,9 @@ class Menu_Gui():
         self.app.destroy()
         return True
 
+    def escape_menu(self):
+        print("game paused")
+
 
 
 

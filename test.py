@@ -1,5 +1,5 @@
-import os
+main = 1
+secondary = 2
 
-current_directory = os.path.dirname(os.path.abspath(__file__))
-
-print(current_directory)
+[main, secondary] = [secondary, main]
+print(main, secondary)

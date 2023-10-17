@@ -7,10 +7,6 @@ class Snake(Screen):
         self.snake_body = []
         self.snake_speed = 20
 
-
-
-
-
     def create_component(self):
         new_segment = Turtle("square")
         new_segment.goto(10000,10000)
@@ -37,4 +33,14 @@ class Snake(Screen):
     def face_west(self):
         if self.snake_body[0].heading() != 0:
             self.snake_body[0].setheading(180)
+
+    def snake_stop(self):
+        self.snake_speed = 0
+
+    def snake_stop(self):
+        self.snake_speed = 0
+
+
+    def snake_start(self):
+        self.snake_speed = 20
 
